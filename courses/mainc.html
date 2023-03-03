@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading">Courses</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src=https://media.istockphoto.com/id/1189916627/vector/smart-industry-production-process.jpg?s=612x612&w=0&k=20&c=CRfeHwgxS-EEzb5G3CuhCc3oNcPjZV947xF2LJ089sM=>
+            <h3>Engineering and Technology</h3>
+            
+            <a href="engandtech.html" class="btn">Enroll now</a>
+        </div>
+
+        <div class="box">
+            <img src="imgin/Health Science.jpg">
+            <h3>Health Science</h3>
+         
+            <a href="health science.html" class="btn">Enroll now</a>
+        </div>
+
+        <div class="box">
+            <img src="imgin/Law.jpg">
+            <h3>Law</h3>
+            
+            <a href="Law.html" class="btn">Enroll now</a>
+        </div>
+
+        <div class="box">
+          <img src="imgin/Maths.jpg">
+            <h3>Maths</h3>
+            
+            <a href="maths.html " class="btn">Enroll now</a>
+        </div>
+
+        <div class="box">
+            <img src="imgin/Management.jpg">
+            <h3>Management</h3>
+           
+            <a href="management.html" class="btn">Enroll now</a>
+        </div>
+  <div class="box">
+            <img src="imgin/law1.jpg">
+            <h3>Science</h3>
+
+            <a href="shivam.html" class="btn">Enroll now</a>
+        </div>
+  
+</div>
+</body>
+<style>
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background-color:#eee;
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:black;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:black;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:black;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+</style>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Register Page</title>
+	<link rel="stylesheet" href="login/css/style.css">	
+</head>
+
+<body>
+	<header>
+		<h1 class="heading">Signup For</h1>
+	</header>
+
+	<!-- container div -->
+	<div class="container">
+
+		<!-- upper button section to select the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login"> Teacher</button>
+			<button class="signup"> Student</button>
+		</div>
+
+		<!-- Form section that contains the signup form -->
+		<div class="form-section">
+
+			<!--Signup for teacher -->
+			
+			<div class="signup-box">
+				<input type="text" class="name ele" placeholder="First name">
+				<input type="text" class="name ele" placeholder="Last name">	
+				<input type="email" class="email ele" placeholder="youremail@email.com">	
+				<input type="password" class="password ele" placeholder="password">
+				<span>Gender: <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female </span>
+			    <input type="number" class="name ele" placeholder="Mobile No:">
+				<input type="text" class="name ele" placeholder="Organisation Name">
+				<input type="text" class="name ele" placeholder="Designation">
+				<button class="clkbtn">Signup</button>
+			</div>
+
+			<!-- signup for student -->
+
+			<div class="signup-box">
+				<input type="text" class="name ele" placeholder="Enter your name">
+				<input type="email" class="email ele" placeholder="youremail@email.com">
+				<input type="password" class="password ele" placeholder="password">
+				<input type="password" class="password ele" placeholder="Confirm password">
+				<span>Gender: <input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female </span>
+				<input type="number" class="name ele" placeholder="Mobile No:">
+				<input type="date" class="name ele" placeholder="DOB">
+				<button class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+	<script src="login/javascript/index.js"></script>
+</body>
+
+</html>

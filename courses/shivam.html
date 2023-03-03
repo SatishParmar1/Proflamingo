@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color::#eee;
+}
+</style>
+</head>
+
+<body>
+<center>
+<h1 class="hello"> Pomodoro Technique </h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="hello" id="player"></div>
+</center>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+let videoSource = new Array();
+videoSource[0] = "wLHULTUjwLs";
+videoSource[1] = "tuo-VDbWVWU";
+let i = 0; // global
+const videoCount = videoSource.length;
+
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    videoId: videoSource[0],
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.ENDED) {
+    i++;
+    if (i == videoCount) {
+        i=0;
+        player.loadVideoById(videoSource[i]);
+    } else {
+        player.loadVideoById(videoSource[i]);
+    }
+  }
+}
+
+function ensureVideoPlays() {
+    if (player) {
+        player.playVideo();
+    }
+}
+</script>
+
+
+
+</body>
+</html>

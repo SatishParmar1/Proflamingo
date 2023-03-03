@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        top: 0;
+        box-sizing: border-box;
+      }
+        body{
+        background-color:#eee;
+        }
+      .heading1 {
+        text-align: center;
+        width: 400px;
+        padding: 5px ;
+        padding-bottom: 5px;
+        font-size: 3.5rem;
+        color:black;
+        margin-left: 50px;
+        box-shadow:1px 1px 10px 3px gray;
+        margin-left:8%;
+        background: white;
+      }
+       .heading2 {
+        text-align: center;
+        width: 400px;
+        padding: 5px ;
+        padding-bottom: 5px;
+        font-size: 2rem;
+        color: black;
+        margin: 25px;
+        box-shadow:1px 1px 10px 3px gray;
+        margin: left 50px;;
+        background: white;
+      }
+     
+      .about {
+        font-size: 100px;
+
+      }
+      .about1 {
+        font-size: 30px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 480px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 1px 1px 10px 3px gray;
+        margin-top:20px;
+      }
+      .subbox1{
+        box-shadow: 8px 8px 20px rgb(128 128 128);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        height: 350px;
+        width: 370px;
+        border: 1px solid black;
+        border-radius: 190px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 1px 1px 10px 3px gray;
+      }
+      .subbox2{
+        box-shadow: 1px 1px 10px 3px gray;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        border-radius: 19px;
+        height: 300px;
+        padding:2px 10px;
+        font-size:28px ;
+        
+      }
+      .heading3{
+        text-align: center;
+        width: 250px;
+        padding: 5px ;
+        padding-bottom: 5px;
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 1.5rem;
+        color:black;
+        margin-left: 50px;
+        box-shadow:1px 1px 10px 3px gray;
+        margin-left: 27%;
+        background: white;
+      }
+      .logo {
+        /* border: 2px solid black; */
+        height: 300px;
+        width: 300px;
+ 
+      }
+      .devbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 100%;
+      margin-top:20px;
+      
+      }
+      .subdevbox {
+        box-shadow: 8px 8px 20px rgb(128 128 128);
+        height: 550px;
+        border: 2px solid black;
+        width: 350px;
+        margin: 10px;
+        background-color:white;
+        border-radius:10px;
+        padding:0px 5px;
+      }
+      .devimg {
+        height: 250px;
+        width: 250px;
+        margin-left:8%;
+        margin-top: 33px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+      .name {
+        line-height: 1.3em;
+        text-align: center;
+      }
+      #nameid {
+        font-size: 23px;
+      }
+      .designation {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius:10px;
+      }
+      .linkedinlogo {
+        height: 34px;
+        width: 34px;
+        margin-top: 20px;
+        margin-left: 40%;
+      }
+          .background {
+			background: white;
+			background-blend-mode: darken;
+			background-size: cover;
+        text-align:center;
+          border:1px solid black;
+		}
+    </style>
+  </head>
+  <body>
+    <br />
+    <center>
+    <h1 class="heading1" >About Us </h1>
+  </center>
+    <br />
+    <div class="box">
+      <div class="subbox1">
+        <img class="logo" src="imgabout/newlogo.jpg" alt="logo" />
+      </div>
+
+      
+    
+    
+      <div class="subbox2" id="second">
+        <p class="about">
+          <h1 class="heading3" >Proflamingo</h1>
+          What we want our learners supposed to do after learning the
+          courses?<br />
+          figure that out and build the appropriate usage of the knowledge.Our
+          mission is to increase the student's enjoyment and understanding of
+          learning art for the future .
+        </p>
+      </div>
+    </div>
+    <br />
+    <center>
+    <h1 class="heading1">Our Team</h1>
+  </center>
+    <br />
+    <div class="devbox">
+      <div class="subdevbox">
+ 
+        <img class="devimg" src="imgabout/sachin.jpg  " alt="sachin" >
+        <h1 class="name">Sachin Suthar</h1>
+        <br />
+        <p class="name" id="nameid">
+          Student of Poornima Institute of Engineering and Technology, Jaipur
+        </p>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/sachin-suthar-3b960622a"  target="_blank">
+          <img
+            class="linkedinlogo"
+            src="imgabout/linkdin.jpg"
+            alt=""
+        /></a>
+        <br />
+        <p class="designation">Devloper</p><br>
+      </div>
+
+      <div class="subdevbox">
+        <img class="devimg" src="imgabout/versha.jpg" alt="sachin" />
+        <h1 class="name">Versha Dubey</h1>
+        <br />
+        <p class="name" id="nameid">
+          Student of Poornima Institute of Engineering and Technology, Jaipur
+        </p>
+        <a class="linkedin" href="https://www.google.com/webhp">
+          <img
+            class="linkedinlogo"
+            src="imgabout/linkdin.jpg"
+            alt=""
+        /></a>
+        <br />
+        <p class="designation">Devloper</p><br>
+      </div>
+
+      <div class="subdevbox">
+        <img class="devimg" src="imgabout/satish.jpg" alt="sachin" />
+        <h1 class="name">Satish Parmar</h1>
+        <br />
+        <p class="name" id="nameid">Student of Poornima Institute of Engineering and Technology, Jaipur
+        </p>
+        <a class="linkedin" href="https://www.linkedin.com/in/satish-parmar-ak978312/"  target="_blank">
+          <img
+            class="linkedinlogo"
+            src="imgabout/linkdin.jpg"
+            alt=""
+        /></a>
+        <br />
+        <p class="designation">Designer</p><br>
+      </div>
+
+      <div class="subdevbox">
+        <img class="devimg" src="imgabout/shivam.jpg.webp" alt="sachin" />
+        <h1 class="name">Shivam Kumar</h1>
+        <br />
+        <p class="name" id="nameid">
+          Student of Poornima Institute of Engineering and Technology, Jaipur
+        </p>
+
+        <a class="linkedin" href="https://www.google.com/webhp">
+          <img
+            class="linkedinlogo"
+            src="imgabout/linkdin.jpg"
+            alt=""
+        /></a>
+        <br />
+        <p class="designation">Content Creater</p><br>
+      </div>
+    </div>
+<footer class="background">
+		<p class="text-footer">
+           <h1> Proflamingo.com </h1>
+          <h3> Email: Info.proflamingo.com</h3>
+         <h3> Contact: +91-1234506789</h3>
+			Copyright ©-All rights are reserved
+		</p>
+
+	</footer>
+  </body>
+</html>
