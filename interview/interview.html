@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eee;
+      }
+      .container {
+        height: 544px;
+        width: 100%;
+        /* border: 2px solid #eee; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .item {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 300px;
+        height: 250px;
+        box-shadow: 8px 8px 20px rgb(128 128 128);
+        border-radius: 15px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 3px;
+        background-color: white;
+      }
+      .item:hover {
+        border: 4px solid orange;
+      }
+
+      .caption {
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        margin: 30px auto;
+        font-size: 25px;
+        overflow: hidden;
+
+        color: black;
+      }
+      .link {
+        text-decoration: none;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .iner {
+        margin-top: 20px;
+        margin-left: 50px;
+        border-radius: 23px;
+        width: 60%;
+        height: 50%;
+      }
+      .footer {
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        background: white;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="heading">Interview Prepration</h1>
+    </div>
+    <div class="container">
+      <div class="item" id="item-1">
+        <a class="link" href="https://youtu.be/fjuneQ-Babk">
+          <img class="iner" src="logo/aiml.png" />
+          <div class="caption">Machine Learning & Data Science</div>
+        </a>
+      </div>
+      <div class="item" id="item-2">
+        <a class="link" href="https://youtu.be/ATIVakBSjtI">
+          <img class="iner" src="logo/spring-boot-logo.png" />
+          <div class="caption">Spring Boot</div>
+        </a>
+      </div>
+      <div class="item" id="item-4">
+        <a class="link" href="https://youtu.be/6XQKW-PjfAA">
+          <img class="iner" src="logo/Java-Logo.png" />
+          <div class="caption">Java</div>
+        </a>
+      </div>
+      <div class="item" id="item-5">
+        <a class="link" href="https://youtu.be/S3YIdQjYODY">
+          <img class="iner" src="logo/unix.jpg" />
+          <div class="caption">Unix and OS</div>
+        </a>
+      </div>
+      <div class="item" id="item-6">
+        <a class="link" href="https://youtu.be/4XVd0de9t-0">
+          <img class="iner" src="logo/sql.png" />
+          <div class="caption">SQL/ PLSQL</div>
+        </a>
+      </div>
+      <div class="item" id="item-7">
+        <a class="link" href="https://youtu.be/tcxYkk16BCI">
+          <img class="iner" src="logo/pythonlogo.png" />
+          <div class="caption">Python</div>
+        </a>
+      </div>
+      <div class="item" id="item-8">
+        <a class="link" href="https://youtu.be/TrtwfitXKVg">
+          <img class="iner" src="logo/htmlcss.png" />
+          <div class="caption">HTML,CSS</div>
+        </a>
+      </div>
+      <div class="item" id="item-9">
+        <a class="link" href="https://youtu.be/Tm4-7b5cCTY">
+          <img class="iner" src="logo/csharp-logo.png" />
+          <div class="caption">C#</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1>Proflamingo.com</h1>
+      <h3>Email: Info.proflamingo.com</h3>
+      <h3>Contact: +91-1234506789</h3>
+    </div>
+  </body>
+</html>

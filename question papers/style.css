@@ -1,0 +1,110 @@
+  html {
+    display: flex;
+    justify-content: center;  
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    background-image: url('image/ProFlemingo.png');
+  }
+  
+  main {
+width:100%;
+line-height: 100%;
+  }
+  
+  h1 {  
+    color: #FF0000;
+   text-align:center; 
+line-height: 0.5;
+  }
+
+h2{
+text-align:center;
+font-size:30px;
+line-height: 0.5  ;
+}
+
+h3{
+color:#0000CD;
+text-align:center;
+font-size:20px;
+line-height: 0.5;
+  }
+
+h4{
+ color: #FF0000;
+ line-height: 70%;
+}
+
+h4.warning{
+  line-height: 150%;
+}
+
+  .enter{
+ background-color:white;
+border:2px solid orange;
+padding:7px 5px;
+text-align:center;
+width: 90px;
+height:40px;
+border-radius:7px;
+cursor:pointer;
+margin:auto;
+color:rgb(8, 8, 8)
+  }
+.enter:hover{
+background-color:orange;
+border:2px solid black;
+color:white;
+  }
+
+  .active{
+    background-color:orange;
+   border:2px solid rgb(251, 249, 249);
+   padding:7px 5px;
+   text-align:center;
+   width: 200px;
+   height:40px;
+   border-radius:7px;
+   margin-top:10px;
+   margin-right:150px;
+   float:right;
+   border-radius: 10px;
+     }
+   
+     .change {
+      background-color: #07a21e;  
+      color:black;
+      border:1px solid black;
+      padding:3px 5px;
+      margin-top:20px;
+      margin-right:400px;
+      float:right;
+    }
+    
+    .inactive {
+      background-color: #dc1e1e;
+      color:black;
+      border:1px solid black;
+      padding:3px 5px;
+      margin-top:20px;
+      margin-right:400px;
+      float:right;
+    }
+
+    .message{
+      display:flex;
+      float:right;
+      margin-top:10px;
+      margin-right:0px;
+    }
+    
+  kbd {
+    outline: solid 1px gray;
+    background-color: lightgray;
+    color: black;
+    padding-inline: 0.25rem;
+    font-family: monospace;
+  }
+ 

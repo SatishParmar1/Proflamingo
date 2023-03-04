@@ -1,0 +1,133 @@
+<html>
+<head>
+</head>
+<style>
+ body {
+    font-family: helvetica, arial, sans-serif;
+    background-image: url('image/ProFlemingo.png');
+  }
+
+.vclass {
+        width: 40vw;
+        height: 40vh;
+        border: 2px solid black;
+        position: relative;
+       margin:auto;
+       margin-top:20vh;
+      }
+
+      #vid{
+        width: 40vw;
+        height: 40vh;
+        object-fit: cover;
+        margin:auto;
+        margin-top:0vh;
+}
+.second{
+  margin-top:3%;
+ text-decoration: none;
+}
+
+.button-open{
+width:10vw;
+height:5vh;
+background-color: white;
+  color: black;
+}
+.button-open:hover{
+  background-color: orange;
+  color: white;
+text-decoration: none;
+
+}
+
+.button-close{
+margin-left:2%;
+width:10vw;
+height:5vh;
+background-color: white;
+  color: black;
+}
+.button-close:hover{
+  background-color: orange;
+  color: white;
+text-decoration: none;
+
+}
+
+.ebtn{
+  border: 2px solid black;
+  padding: 17px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+width:10vw;
+}
+
+.ebtn:hover{
+  background-color: orange;
+  color: white;
+text-decoration: none;
+
+}
+
+</style>
+<body>
+
+<div class="vclass">
+    <video id="vid"></video>
+</div>
+<br >
+<br>
+<center>
+<button class="button-open" id="but" >Open WebCam</button> 
+<button class="button-close" onclick="StopWebCam()">close web cam</button>
+</center>
+<br>
+<br>
+<center>
+<div class="second">
+  <a class="ebtn" target="_blank"   href="aptitude.html"  >Enter The Test</a>
+</div>
+</center>
+<script>
+const successCallback = (position) => {
+  console.log(position);
+};
+
+const errorCallback = (error) => {
+  console.log(error);
+};
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+ document.addEventListener("DOMContentLoaded", () => {
+      var but = document.getElementById("but");
+      var video = document.getElementById("vid");
+      var mediaDevices = navigator.mediaDevices;
+      vid.muted = true;
+      but.addEventListener("click", () => {
+      
+        // Accessing the user camera and video.
+        mediaDevices
+          .getUserMedia({
+            video: true,
+            audio: true,
+          })
+          .then((stream) => {      
+            // Changing the source of video to current stream.
+            video.srcObject = stream;
+            video.addEventListener("loadedmetadata", () => {
+              video.play();
+            });
+          })
+          .catch(alert);
+      });
+    });
+
+
+
+
+</script>
+
+</body>
+</html>
